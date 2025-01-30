@@ -22,7 +22,6 @@ h1, h2 {
 
 /* Блок с фоном */
 .hero-background {
-  .hero-background {
   background: url('image/background_main.jpg') no-repeat center center/cover;
 }
   padding: 80px 0;
