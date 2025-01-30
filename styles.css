@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Блок с фоном */
 .hero-background {
-  background: url('./images/background_main.jpg') no-repeat center center/cover;
+  background: url('src="/upload/iblock/51a/06dad3qf4870pleddwpt5w9nv420bssf/personalized_selection_%20regional_measures.png"') no-repeat center center/cover;
   padding: 80px 0;
   text-align: center;
   color: #fff;
