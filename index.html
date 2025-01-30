@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая работа - Биржа стажировок</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/grimoire@latest/grimoire.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            padding: 2rem;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Первая работа</h1>
+    <p>Биржа стажировок и работы без опыта для студентов</p>
+</header>
+
+<section>
+    <h2>Для студентов</h2>
+    <div class="form-container">
+        <h3>Зарегистрируйтесь, чтобы получить свою первую работу!</h3>
+        <form id="student-form">
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required><br><br>
+            <select id="university" name="university" required>
+                <option value="">Выберите университет</option>
+                <option value="MSU">МГУ</option>
+                <option value="SPbSU">СПбГУ</option>
+                <option value="SPbPU">СПбПУ</option>
+            </select><br><br>
+            <input type="submit" value="Зарегистрироваться" class="btn">
+        </form>
+    </div>
+</section>
+
+<section>
+    <h2>Для работодателей</h2>
+    <div class="form-container">
+        <h3>Разместите вашу вакансию для студентов</h3>
+        <form id="employer-form">
+            <input type="text" id="company-name" name="company-name" placeholder="Название компании" required><br><br>
+            <input type="email" id="company-email" name="company-email" placeholder="Ваш email" required><br><br>
+            <textarea id="vacancy-description" name="vacancy-description" placeholder="Описание вакансии" required></textarea><br><br>
+            <input type="submit" value="Разместить вакансию" class="btn">
+        </form>
+    </div>
+</section>
+
+<section class="contact-info">
+    <h2>Связаться с нами</h2>
+    <p>Напишите нам в <a href="https://t.me/yourtelegram" target="_blank">Telegram</a> для вопросов и предложений.</p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/grimoire@latest/grimoire.min.js"></script>
+<script>
+    // Пример простой обработки форм (сохраняем данные в консоли)
+    document.getElementById("student-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        console.log("Студент зарегистрирован:", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            university: document.getElementById("university").value
+        });
+    });
+
+    document.getElementById("employer-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        console.log("Вакансия размещена:", {
+            companyName: document.getElementById("company-name").value,
+            companyEmail: document.getElementById("company-email").value,
+            vacancyDescription: document.getElementById("vacancy-description").value
+        });
+    });
+</script>
+
+</body>
+</html>
