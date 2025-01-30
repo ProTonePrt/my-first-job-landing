@@ -10,16 +10,13 @@
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('путь_к_изображению.jpg'); /* Указываем путь к изображению */
-    background-size: cover; /* Фон будет растягиваться по всей странице */
-    background-position: center center; /* Центрирование изображения */
-    background-attachment: fixed; /* Фиксированный фон */
-    opacity: 0.5; /* Полупрозрачность фона */
+  background-image: url('C:\Users\Acer\OneDrive\Документы\GitHubProjects\images\background_main.jpg'); /* Указываем путь к изображению */
+  background-size: cover; /* Фон будет растягиваться по всей странице */
+  background-position: center center; /* Центрирование изображения */
+  background-attachment: fixed; /* Фиксированный фон */
+  opacity: 0.5; /* Полупрозрачность фона */
 }
+
 /* Для секции с полупрозрачным фоном */
 .section-background {
   background-image: url('C:\Users\Acer\OneDrive\Документы\GitHubProjects\images\background_main.jpg');
@@ -80,18 +77,18 @@ header {
 
 /* Кнопка */
 .button {
-    background: linear-gradient(45deg, #ff7f50, #ff4500); /* Оранжево-красный градиент */
+  background: linear-gradient(45deg, #ff7f50, #ff4500); /* Оранжево-красный градиент */
   color: white; /* Белый цвет текста */
   font-size: 16px;
   padding: 12px 20px;
   border-radius: 25px; /* Скругленные углы */
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для объема */
-  transition: all 0.3s ease;;
+  transition: all 0.3s ease; /* Плавный переход для эффектов */
 }
 
-.button:hover {
-    transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+button:hover {
+  transform: scale(1.1); /* Увеличение размера кнопки при наведении */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Более сильная тень при наведении */
   cursor: pointer; /* Курсор в виде руки */
 }
@@ -157,5 +154,22 @@ blockquote {
   color: #333;
   margin-bottom: 15px;
 }
+
+}
+@keyframes materialize {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Текст начинается немного ниже */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Текст в конечной позиции */
+  }
+}
+
+.materialize {
+  animation: materialize 1.5s ease-out; /* Анимация плавного появления */
+}
+
 
 
