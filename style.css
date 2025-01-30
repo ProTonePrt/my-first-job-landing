@@ -22,7 +22,9 @@ h1, h2 {
 
 /* Блок с фоном */
 .hero-background {
-  background: url('images/background_main.jpg') no-repeat center center/cover;
+  .hero-background {
+  background: url('image/background_main.jpg') no-repeat center center/cover;
+}
   padding: 80px 0;
   text-align: center;
   color: #fff;
