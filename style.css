@@ -31,12 +31,17 @@ h1, h2 {
 .hero-background h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #e0e0e0; /* Светло-серый цвет текста */
+  text-shadow: 1px 1px 2px #ff7f50, -1px -1px 2px #ff7f50; /* Оранжевая обводка */
 }
 
 .hero-background p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #e0e0e0; /* Светло-серый цвет */
+  text-shadow: 1px 1px 1px #ff7f50; /* Легкая обводка */
 }
+
 
 button {
   background: linear-gradient(45deg, #ff7f50, #ff4500);
