@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Блок с фоном */
 .hero-background {
-  background: url('images/background_main.jpg') no-repeat center center/cover;
+  background: url('path_to_your_image.jpg') no-repeat center center/cover;
   padding: 80px 0;
   text-align: center;
   color: #fff;
@@ -138,6 +138,23 @@ button:hover {
 
 #contact p {
   margin-bottom: 30px;
+}
+
+button {
+  background: linear-gradient(45deg, #ff7f50, #ff4500);
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 /* Фон для блоков */
