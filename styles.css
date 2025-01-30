@@ -1,0 +1,48 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Секции */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Кнопка */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+    }
+}
